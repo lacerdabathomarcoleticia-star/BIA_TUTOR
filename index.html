@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundação Bradesco - Escola Virtual</title>
+  <link rel="icon" type="image/svg+xml" href="assets/svg/icons/bradesco-logo-white.svg" />
+  <meta name="description" content="Fundação Bradesco - Escola Virtual" />
+  <meta name="theme-color" content="#f31656" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bia.css" />
+</head>
+<body>
+<header class="o-header">
+  <span class="o-header_overlay" data-component="modal" data-component-options-overlay></span>
+  <div class="o-header_hld " data-sticky>
+    <div class="v-ctn -no-pd o-header_ctn">
+      <div class="o-header_wpp">
+        <div class="o-header_title" data-sticky-title>
+          
+          <a href="/" class="o-header_title-link">
+            <img src="assets/svg/escola_virtual_horizontal_full.svg" alt="fundação bradesco | escola virtual" class="o-header_title-img">
+          </a>
+        </div>
+        <form autocomplete="off" class="m-search-bar o-header_search" action="/busca" method="get" data-sticky-search>
+          <div class="m-input_field m-search-bar_field" data-component="input" data-sticky-search-field>
+            <input type="text" name="s" id="header-search" data-input-field class="m-input_input -white -no-border m-search-bar_input" data-rules='{"maxlength": 50, "searchFormat": true}' maxlength="50" data-tracking='{ "id": "header-focus", "lbl": "[Focus] busca" }'>
+            <label class="m-input_placeholder -white -small" for="header-search">Digite sua busca</label>
+          </div>
+          <button class="a-search o-header_search-btn" type="submit" data-tracking='{ "id": "header", "lbl": "busca clique" }'>Buscar</button>
+        </form>
+      </div>
+      <div class="o-header_actions">
+
+          <a class="m-access-bar_login -icon" href="/entrar">Acessar</a>
+              <a href="/cadastro?ReturnUrl=https://www.ev.org.br/" class="a-btn -small m-access-bar_register">Cadastrar</a>
+      </div>
+
+      <div class="m-access o-header_access">
+          <a href="#menu-de-acesso" class="m-access_avatar -no-logged" aria-label="Acesso">Acesso</a>
+
+
+<div class="halley_modal t-modal -shadow -bottom o-header_modal" data-component="modal" data-component-options='{ "hashHistory": false, "disableEvents": true }' id="menu-de-acesso">
+  <div class="t-modal_overlay -no-mb" halley-modal-close></div>
+  <div class="t-modal_ctn o-header_modal_ctn">
+    <div class="m-access_modal">
+        <button class="a-close m-menu_close -access -no-bg  -deep" halley-modal-close>Fechar</button>
+
+      <div class="m-menu_wpp">
+          <div class="m-access_login -compressed">
+            <p class="m-access_login-title">Bem-vindo de volta!</p>
+            <form action="/api/login" method="POST" data-component="login">
+              
+
+              <input name="__RequestVerificationToken" type="hidden" value="C6Qo8wDyX07stuMWLrTVyAKfc0vLWJHnIVWDuOqMx92pFjtDf7VXL8Q3NmFQyBjfe6UjGHXiVnyrlvhJ_IN_lYO2BjYTyVXyeDyiLGUf4ehdhvtAqiG840NMruAQIxerbjShabgY5G3RehjdkUmnn-djn9PdfU-Jf6o3zKb0hOc1" />
+
+              <div class="m-input_field m-access_login-field" data-component="input">
+                <input type="text" name="Login" id="login-modal" data-login-email data-input-field data-rules='{ "required": true, "maxlength": 100 }' maxlength="100" class="m-input_input m-access_login-input">
+                <label class="m-input_placeholder -small" for="login-modal">CPF ou <em>E-mail</em></label>
+              </div>
+              <div class="m-input_field m-access_login-field" data-component="input">
+                <input type="password" name="Senha" id="login-modal-pass" data-login-password data-input-field data-rules='{ "required": true, "maxlength": 32 }' maxlength="32" class="m-input_input m-access_login-input">
+                <label class="m-input_placeholder -small" for="login-modal-pass">Senha</label>
+              </div>
+
+              <a href="/esqueci-senha" class="m-access_login-forgot">
+                Esqueci minha senha
+              </a>
+              <input type="hidden" name="Favoritos" data-favorite-localstorage>
+              <button class="a-btn --disabled -full m-access_login-cta" type="submit" disabled>Acessar</button>
+
+                <div class="m-social o-social-form_hdr -no-padding" data-component="oauth-login">
+                  <h2 class="o-social-title -margin">Entrar utilizando uma rede social</h2>
+                  <div class="m-social_btn-hdr">
+                    
+                    <button type="button" class="a-social-btn -google m-social-btn" data-google><span>Continuar com o Google</span></button>
+                    <button type="button" class="a-social-btn -facebook m-social-btn" data-facebook><span>Continuar com o Facebook</span></button>
+                    <button type="button" class="a-social-btn -linkedin m-social-btn" data-linkedin><span>Continuar com o LinkedIn</span></button>
+                  </div>
+                </div>
+              <small class="m-access_login-recaptcha">
+                Este <i>site</i> é protegido pelo reCAPTCHA e se aplicam a <a target="_blank" href="https://policies.google.com/privacy?hl=pt-BR">Política de Privacidade</a> e os <a target="_blank" href="https://policies.google.com/terms?hl=pt-BR">Termos de Uso</a> do Google.
+              </small>
+              
+            </form>
+          </div>
+      </div>
+
+        
+          <div class="m-menu-cta m-menu_cta">
+            <p class="m-menu-cta_text">Ainda não tem acesso? Estude com a gente :)</p>
+
+            <div class="m-menu-cta_btn-hld">
+                  <a href="/cadastro?ReturnUrl=https://www.ev.org.br/" class="a-btn -no-bg -full m-menu-cta_link -login">Cadastrar</a>
+            </div>
+          </div>
+        
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+      </div>
+
+      
+
+<nav class="m-nav o-header_menu" data-component="nav">
+  <ul class="m-nav_list">
+    <li class="m-nav_item"><a href="index.html" data-nav-link class="m-nav_link home -active ">Home</a></li>
+    <li class="m-nav_item"><a href="/busca" data-nav-link class="m-nav_link search ">Busca</a></li>
+    <li class="m-nav_item"><a href="pages/curso.html" data-nav-link class="m-nav_link cappello  ">Cursos</a></li>
+    
+    <li class="m-nav_item"><a href="#menu" data-nav-link class="m-nav_link menu">Menu</a></li>
+  </ul>
+
+  
+<div class="halley_modal t-modal -top -shadow" data-nav-menu id="menu">
+  <div class="t-modal_ctn">
+    <div class="m-menu">
+      <button class="a-close m-menu_close" data-nav-link-menu halley-modal-close>Fechar</button>
+
+      <div class="m-menu_wpp">
+        <ul class="m-border-list m-menu_list -padding">
+
+          <li class="m-border-list_item" data-submenu>
+            <span class="m-border-list_link -sub" data-submenu-open>Cursos</span>
+
+            <div class="m-submenu -flex m-border-list_submenu" data-submenu-list>
+              <div class="m-submenu_head">
+                <button class="m-submenu_back" data-submenu-back>Voltar</button>
+                <p class="m-submenu_title">Cursos</p>
+                <small class="m-submenu_small">Gratuitos e 100% <em>on-line</em></small>
+              </div>
+
+              <div class="m-submenu_foot">
+                <div class="m-menu_list">
+                  <ul class="m-border-list">
+                    
+                    
+                    <li class="m-border-list_item"><a href="pages/curso.html" class="m-border-list_link">Todos os cursos</a></li>
+                    <li class="m-border-list_item"><a id="botao-areas-de-interesse" halley-modal-close href="javascript: acessaConteudo('animation-area-interesse')" class="m-border-list_link">Área de Interesse</a></li>
+                    <li class="m-border-list_item"><a href="/trilhas-de-conhecimento" class="m-border-list_link">Trilhas de Conhecimento</a></li>
+                    <li class="m-border-list_item">
+                      <a href="/validar-certificado" class="m-border-list_link" data-tracking='{ "id": "header-courses" }'>
+                        <p class="a-border-icon -certify -small-text">Validação de certificado</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="m-border-list_item" data-submenu>
+            <span class="m-border-list_link -sub" data-submenu-open data-tracking='{ "id" : "header" }'>Ajuda</span>
+            <div class="m-submenu m-border-list_submenu" data-submenu-list>
+              <div class="m-submenu_head">
+                <button class="m-submenu_back" data-submenu-back>Voltar</button>
+                <p class="m-submenu_title">Ajuda</p>
+                <small class="m-submenu_small">Como podemos te ajudar?</small>
+              </div>
+              <ul class="m-border-list m-menu_list">
+                <li class="m-border-list_item"><a href="/faq" class="m-border-list_link" data-tracking='{ "id" : "header-help" }'>Perguntas Frequentes</a></li>
+              </ul>
+
+            </div>
+          </li>
+          <li class="m-border-list_item"><a href="/parcerias" class="m-border-list_link" data-tracking='{ "id": "header" }'>Parcerias</a></li>
+          <li class="m-border-list_item"><a href="/escola-virtual" class="m-border-list_link" data-tracking='{ "id": "header" }'>Sobre</a></li>
+          <li class="m-border-list_item"><a href="/acessibilidade" class="m-border-list_link" data-tracking='{ "id": "header-courses" }'><p class="a-border-icon -icon -eye -small -small-text">Informática para Pessoas com Deficiência Visual</p></a></li>
+          
+        </ul>
+
+        <a href="/validar-certificado" class="m-certified" data-tracking='{ "id": "header-courses", "lbl": "Validação de certificado" }'>
+          <p class="a-border-icon -certify">Validação de certificado</p>
+        </a>
+      </div>
+
+        
+          <div class="m-menu-cta m-menu_cta">
+            <p class="m-menu-cta_text">Já é nosso aluno? Identifique-se para acessar.</p>
+
+            <div class="m-menu-cta_btn-hld">
+              <a href="#menu-de-acesso" class="a-btn -full -shadow m-menu-cta_link">Acessar</a>
+                  <a href="/cadastro?ReturnUrl=https://www.ev.org.br/" class="a-btn -full -no-bg m-menu-cta_link">Cadastrar</a>
+            </div>
+          </div>
+        
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</nav>
+
+    </div>
+    <div class="v-ctn -no-pd o-header_ctn o-header_top-menu-ctn" data-sticky-nav>
+      
+
+<nav class="m-top-menu o-header_top-menu">
+  <ul class="m-top-menu_list">
+    <li class="m-top-menu_item">
+      <a href="index.html" data-tracking='{ "id" : "header", "lbl": "Ínicio" }' class="m-top-menu_link -active" accesskey="i">Início</a>
+    </li>
+    <li class="m-top-menu_item">
+      <a href="pages/curso.html" class="m-top-menu_link " data-tracking='{ "id" : "header", "lbl": "Cursos" }' accesskey="c">Cursos</a>
+    </li>
+    <li class="m-top-menu_item">
+      <a href="/parcerias" data-tracking='{ "id" : "header", "lbl": "Parcerias" }' class="m-top-menu_link " accesskey="p">Parcerias</a>
+    </li>
+    <li class="m-top-menu_item">
+      <a href="/escola-virtual" data-tracking='{ "id" : "header", "lbl": "Sobre" }' class="m-top-menu_link " accesskey="s">Sobre</a>
+    </li>
+
+    <li class="m-top-menu_item">
+
+      <a href="#ajuda" data-tracking='{ "id" : "header", "lbl": "Ajuda" }' class="m-top-menu_link -submenu " accesskey="a">Ajuda</a>
+    </li>
+  </ul>
+</nav>
+
+    </div>
+  </div>
+
+  <div class="o-header_modals">
+    <div class="halley_modal t-modal -bottom -fade-y" data-component="modal" data-component-options='{}' id="cursos">
+  <div class="t-modal_ctn">
+    
+<div class="m-menu">
+  <div class="m-menu_wpp">
+    <div class="m-submenu -flex">
+      <div class="m-submenu_head">
+        <div class="v-ctn">
+          <button class="a-close m-menu_close -top" halley-modal-close>Fechar</button>
+          <p class="m-submenu_title">Cursos</p>
+          <small class="m-submenu_small">Gratuitos e 100% <em>on-line</em></small>
+        </div>
+      </div>
+      <div class="v-ctn m-menu_list v-scroll_red">
+        <ul class="m-border-list">
+          
+          
+          <li class="m-border-list_item"><a href="pages/curso.html" class="m-border-list_link">Todos os cursos</a></li>
+          <li class="m-border-list_item"><a id="botao-areas-de-interesse" halley-modal-close href="javascript: acessaConteudo('animation-area-interesse')" class="m-border-list_link">Área de Interesse</a></li>
+          <li class="m-border-list_item"><a href="/trilhas-de-conhecimento" class="m-border-list_link">Trilhas de Conhecimento</a></li>
+          <li class="m-border-list_item">
+            <a href="/validar-certificado" class="m-border-list_link" data-tracking='{ "id": "header-courses" }'>
+              <p class="a-border-icon -certify">Validação de certificado</p>
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+  <div class="m-menu-cta m-menu_cta">
+    <div class="v-ctn">
+        
+          <p class="m-menu-cta_text">Já é nosso aluno? Identifique-se para acessar.</p>
+
+          <div class="m-menu-cta_btn-hld">
+              <a href="/cadastro?ReturnUrl=https://www.ev.org.br/" class="a-btn -no-bg m-menu-cta_link">Cadastrar</a>
+          </div>
+        
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+    <div class="halley_modal t-modal -bottom -fade-y" data-component="modal" data-component-options='{}' id="ajuda">
+  <div class="t-modal_ctn">
+    <div class="m-menu">
+  <div class="m-menu_wpp">
+    <div class="m-submenu">
+      <div class="m-submenu_head">
+        <div class="v-ctn">
+          <button class="a-close m-menu_close -top" halley-modal-close>Fechar</button>
+          <p class="m-submenu_title">Ajuda</p>
+          <small class="m-submenu_small">Como podemos te ajudar?</small>
+        </div>
+      </div>
+      <ul class="v-ctn m-border-list m-menu_list">
+        <li class="m-border-list_item">
+          <a class="a-border-icon -perfre m-border-list_link" href="/faq" class="m-border-list_link" data-tracking='{ "id": "header-help" }'>
+            Perguntas Frequentes
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+</header>
+
+<main class="v-main" id="conteudo-principal">
+<div class="o-webdoor">
+  <div class="v-ctn -no-pd">
+    <div class="o-webdoor_wrp">
+      <div class="o-webdoor_ctn v-carousel" id="webdoor-1" data-tracking='{ "id": "banner", "carousel": true }' data-component="carousel" data-component-options='{"slidesPerView": "1", "autoplay": { "delay": 6000 }, "loop": true, "navigation": { "nextEl": "[data-carousel-next-webdoor]", "prevEl": "[data-carousel-prev-webdoor]" }, "freeMode": false }'>
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <picture class="o-webdoor_img">
+                  
+                  <source media="(max-width: 767px)" srcset="assets/img/banner-agentes-ia.jpg">
+                  
+                  <img src="assets/img/banner-agentes-ia.jpg" alt="Fundação Bradesco" />
+                </picture>
+
+                <div class="o-webdoor_info -expanded">
+                  <p class="o-webdoor_steps">1 de 3</p>
+
+                    <h1 class="o-webdoor_title">IA: Crie um assistente inteligente para automatizar suas tarefas</h1>
+
+                    <p class="o-webdoor_desc">
+                      <strong>Novo módulo 8 </strong>do curso<strong> FluêncIA</strong>. <strong>Crie agentes inteligentes</strong> para apoiar sua rotina com mais agilidade, consistência e produtividade.
+                    </p>
+                                    <div class="o-webdoor_arrows">
+                      <button class="o-webdoor_btn -prev-slide" data-carousel-prev-webdoor aria-label="Anterior">Anterior</button>
+                      <button class="o-webdoor_btn -next-slide" data-carousel-next-webdoor aria-label="Proximo">Próximo</button>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <picture class="o-webdoor_img">
+                  
+                  <source media="(max-width: 767px)" srcset="assets/img/banner-prompt-ia.jpg">
+                  
+                  <img src="assets/img/banner-prompt-ia.jpg" alt="Fundação Bradesco" />
+                </picture>
+
+                <div class="o-webdoor_info ">
+                  <p class="o-webdoor_steps">2 de 3</p>
+                    <a href="https://www.ev.org.br/cursos/fluencia" data-tracking='{ "id": "banner-link" }'>
+
+                    <p class="o-webdoor_title">IA: Como escrever bons prompts</p> 
+
+                    <p class="o-webdoor_desc">
+                      <strong>No novo módulo 7</strong> do <strong>FluêncIA</strong>, <strong>você aprenderá a criar prompts claros e eficientes.</strong><br />
+Oriente a IA para obter respostas mais úteis, criativas e alinhadas ao que você precisa.
+                    </p>
+                                      </a>
+                  <div class="o-webdoor_arrows">
+                      <button class="o-webdoor_btn -prev-slide" data-carousel-prev-webdoor aria-label="Anterior">Anterior</button>
+                      <button class="o-webdoor_btn -next-slide" data-carousel-next-webdoor aria-label="Proximo">Próximo</button>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <picture class="o-webdoor_img">
+                  
+                  <source media="(max-width: 767px)" srcset="assets/img/banner-70-anos.jpg">
+                  
+                  <img src="assets/img/banner-70-anos.jpg" alt="Fundação Bradesco" />
+                </picture>
+
+                <div class="o-webdoor_info -expanded">
+                  <p class="o-webdoor_steps">3 de 3</p>
+                    <a href="https://fundacao.bradesco/" data-tracking='{ "id": "banner-link" }'>
+
+                    <p class="o-webdoor_title">                                                                                                                                                                                                                 </p> 
+
+                    <p class="o-webdoor_desc">
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    </p>
+                                      </a>
+                  <div class="o-webdoor_arrows">
+                      <button class="o-webdoor_btn -prev-slide" data-carousel-prev-webdoor aria-label="Anterior">Anterior</button>
+                      <button class="o-webdoor_btn -next-slide" data-carousel-next-webdoor aria-label="Proximo">Próximo</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <form class="m-search-box" data-component="autocomplete" data-component-options='{ "position" : "afterbegin", "anotherSelector" : "batata" }' action="/busca" method="get">
+      <p class="m-search-box_title">O que você quer aprender?</p>
+
+      <div class="m-search">
+        <div class="m-search_field -search">
+          <input type="text" name="s" placeholder="Ex: Tecnologia, Excel..." aria-label="O que você quer aprender?" class="a-input m-search_input" date-rules='{"maxlength": 50, "searchFormat": true}' maxlength="50" autocomplete="off" data-autocomplete-input data-tracking='{ "id": "search-box", "lbl": "[Focus] busca" }'>
+        </div>
+      </div>
+      <div class="m-search-box_ctt" data-autocomplete-form>
+        <button class="a-link m-search-box_link" type="submit">Ver mais</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+<section class="o-interest-area" id="areas-de-interesse" data-id="animation-area-interesse">
+  <div class="v-ctn o-interest-area_ctn v-carousel_hld">
+    <h2 class="o-interest-area_title">Áreas de interesse</h2>
+    <h3 class="o-interest-area_subtitle">Aproveite para<br /> aprender mais <br class="-no-desk"/>sobre:</h3>
+
+    <div class="o-interest-area_list-hld v-carousel"
+    data-component="carousel" data-component-options='{
+      "slidesPerView": "auto",
+      "disableOn": ["DESKTOP"],
+      "scrollbar": { "el": ".o-interest-aerea_bar", "dragClass": "o-interest-aerea_track", "draggable": true }
+      }'>
+      <div class="swiper-wrapper m-card-list">
+          <article class="swiper-slide m-card-list_item -professional o-interest-area_item "><a class="m-card-list_link -professional -cappello" href="/areas-de-interesse/desenvolvimento-pessoal-e-profissional" data-tracking='{ "id": "box-categoria" }'>Desenvolvimento Pessoal e Profissional</a></article>
+          <article class="swiper-slide m-card-list_item -finances o-interest-area_item "><a class="m-card-list_link -finances -seal" href="/areas-de-interesse/educacao-e-tecnologia" data-tracking='{ "id": "box-categoria" }'>Educa&#231;&#227;o e Tecnologia</a></article>
+          <article class="swiper-slide m-card-list_item -informatic o-interest-area_item "><a class="m-card-list_link -informatic -seal" href="/areas-de-interesse/inteligencia-artificial" data-tracking='{ "id": "box-categoria" }'>Intelig&#234;ncia Artificial</a></article>
+          <article class="swiper-slide m-card-list_item -adm o-interest-area_item "><a class="m-card-list_link -adm -tag-heart" href="/areas-de-interesse/negocios-e-inovacao" data-tracking='{ "id": "box-categoria" }'>Neg&#243;cios e Inova&#231;&#227;o</a></article>
+          <article class="swiper-slide m-card-list_item -visual o-interest-area_item "><a class="m-card-list_link -visual -graph" href="/areas-de-interesse/produtividade" data-tracking='{ "id": "box-categoria" }'>Produtividade</a></article>
+      </div>
+    </div>
+
+    <span class="a-progress-bar o-interest-aerea_bar">scrollbar</span>
+
+    <a href="pages/curso.html" class="a-btn -shadow o-interest-area_cta" data-tracking='{ "id": "box-categoria", "lbl": "todos os cursos" }'>Mostrar todos os cursos</a>
+  </div>
+</section>
+
+
+
+
+
+<section class="o-access v-carousel_hld">
+  <div class="v-ctn">
+    <div class="o-access_head">
+      <p class="o-access_info">
+        <strong>6041</strong> <span>alunos est&#227;o <br />estudando agora</span>
+        
+      </p>
+      <h2 class="a-title o-access_title">
+        <span>Cursos mais acessados</span>
+        Um deles pode ser o caminho para você chegar ao seu objetivo.
+      </h2>
+    </div>
+    <div class="o-access_tabs v-carousel">
+      <div
+        data-component="carousel"
+        data-component-options='{
+          "watchOverflow": true,
+          "slidesPerView": "auto",
+          "scrollbar": {
+            "el": "[data-carousel-mostaccess-bar]",
+            "draggable": true,
+            "dragClass": "carousel-bar"
+          },
+          "navigation": {
+            "nextEl": "[data-carousel-mostaccess-next]",
+            "prevEl": "[data-carousel-mostaccess-prev]"
+          },
+          "breakpoints": {
+            "1196": {
+              "pagination": {
+                "el": "[data-carousel-mostaccess-pagination]",
+                "type": "fraction"
+              }
+            }
+          }
+        }'
+        data-tracking='{ "id": "box-courses-pagination", "carousel": true }'>
+        <div class="swiper-wrapper">
+
+<article class="m-card -title-cropped o-access_card swiper-slide -informatic" data-card-id="218">
+  <div class="m-card_ctn">
+    <span class="m-card_icon -mobile -seal"></span>
+    <div class="m-card_hld">
+      <h3 class="m-card_title" data-component="ellipsis">IA para seu novo emprego: Do curr&#237;culo &#224; entrevista</h3>
+      <p class="m-card_desc" data-component="ellipsis" data-component-options>O mercado de trabalho está mudando, e a Inteligência Artificial já é parte dessa transformação. Neste curso, você vai aprender a usar a IA de forma estratégica para conquistar uma vaga, mudar de carreira ou se destacar na função atual.
+Com exemplos práticos e linguagem acessível, você descobrirá como criar currículos de impacto, otimizar seu perfil no LinkedIn, encontrar oportunidades de emprego, entender e aplicar palavras-chave essenciais e até se preparar para entrevistas gerando perguntas e respostas com IA.
+Além de ferramentas e técnicas, você vai desenvolver pensamento crítico e criatividade para usar a IA a seu favor, de maneira ética e eficiente.
+Este é o momento de se posicionar à frente e liderar sua própria trajetória profissional.
+Prepare-se para o futuro do trabalho!
+
+Detalhes:
+
+Curso livre de 2 horas
+
+	Acesso 100% online
+	Estude no seu próprio ritmo
+
+Conteúdo Estruturado
+
+
+	Videoaulas cuidadosamente planejadas
+	Explore as infinitas possibilidades da IA para uma nova oportunidade profissional</p>
+      <div class="m-info m-card_foot">
+          <p class="m-info_desc -small m-card_info">Duração <strong>2h</strong></p>
+          <p class="m-info_desc -small m-card_info">Nível <strong>Iniciante</strong></p>
+
+          <a class="m-card_btn a-favorite" href="#menu-de-acesso" data-component="favorite" data-component-options='{ "itemId": 218, "type" : "CURSO_ONLINE", "noLogged" : true }'>Favoritar</a>
+      </div>
+    </div>
+  </div>
+    <a class="m-card_link" href="/cursos/iaempregos" data-tracking='{ "id": "box-courses" }'>IA para seu novo emprego: Do curr&#237;culo &#224; entrevista</a>
+</article>
+
+<article class="m-card -title-cropped o-access_card swiper-slide -informatic" data-card-id="211">
+  <div class="m-card_ctn">
+    <span class="m-card_icon -mobile -seal"></span>
+    <div class="m-card_hld">
+      <h3 class="m-card_title" data-component="ellipsis">Flu&#234;ncIA em Intelig&#234;ncia Artificial</h3>
+      <p class="m-card_desc" data-component="ellipsis" data-component-options>Aprenda os fundamentos básicos da Inteligência Artificial (IA) Generativa de forma acessível e envolvente, desde a sua história até os conceitos essenciais. Explore suas aplicações da IA no dia a dia e em sua produtividade online.
+
+Conteúdo desenvolvido em parceria com a MICROSOFT, com vídeos gravados pelos especialistas da empresa no Brasil.Este é um curso inicialpara se aprofundar no mundo da IA e essencial para seguir com os estudos dos demais cursos oferecidos pela Escola Virtual sobre Inteligência Artificial.
+
+Além disso, temos novidades: os módulos 7 (Como escrever bons prompts com Copilot) e 8 (Criando agentes com Copilot Studio para M365) são inéditos e trazem conteúdos exclusivos para enriquecer a sua jornada.
+
+Os módulos deste curso são flexíveis e você pode estudar de acordo com seu interesse.
+Para emissão do CERTIFICADO é necessária a conclusão de todos os módulos e obter nota igual ou superior a 70% na avaliação final.</p>
+      <div class="m-info m-card_foot">
+          <p class="m-info_desc -small m-card_info">Duração <strong>4h</strong></p>
+          <p class="m-info_desc -small m-card_info">Nível <strong>Iniciante</strong></p>
+
+          <a class="m-card_btn a-favorite" href="#menu-de-acesso" data-component="favorite" data-component-options='{ "itemId": 211, "type" : "CURSO_ONLINE", "noLogged" : true }'>Favoritar</a>
+      </div>
+    </div>
+  </div>
+    <a class="m-card_link" href="/cursos/fluencia" data-tracking='{ "id": "box-courses" }'>Flu&#234;ncIA em Intelig&#234;ncia Artificial</a>
+</article>
+
+<article class="m-card -title-cropped o-access_card swiper-slide -professional" data-card-id="167">
+  <div class="m-card_ctn">
+    <span class="m-card_icon -mobile -cappello"></span>
+    <div class="m-card_hld">
+      <h3 class="m-card_title" data-component="ellipsis">Educa&#231;&#227;o Financeira</h3>
+      <p class="m-card_desc" data-component="ellipsis" data-component-options>Como você lida com seu dinheiro? Você sabe quanto gasta por mês? Você consegue guardar dinheiro? Você gasta com coisas que não precisa? Quem termina primeiro, o mês ou o seu salário?
+
+Com certeza você já ouviu muitas dessas perguntas, não é mesmo?
+
+Vivemos em uma sociedade consumista, em que há uma grande oferta de produtos e serviços, facilidade de crédito e um apelo muito grande da mídia para o consumo. Por outro lado, nossos ganhos não são infinitos e precisamos saber como ganhar, como gastar e como guardar dinheiro.
+
+A educação financeira possibilita exatamente isso, que você faça um planejamento financeiro, que aprenda a gerenciar sua economia pessoal e seus hábitos de consumo.
+
+Neste curso, você conhecerá qual é o seu perfil financeiro, aprenderá a fazer uma análise e a elaborar um controle financeiro de qualidade e conhecerá os conceitos básicos e fundamentais sobre investimentos e sustentabilidade.
+
+Toda a jornada de aprendizado deste conteúdo passa por cinco etapas:
+• Start – Comece a pensar sobre o tema do módulo
+• Bússola – Descubra o que é preciso saber para cumprir a missão
+• Desafio – Reveja os conceitos apresentados no módulo
+• Missão – Coloque em prática o que você aprendeu
+• Quiz – Teste seus conhecimentos sobre o que você aprendeu</p>
+      <div class="m-info m-card_foot">
+          <p class="m-info_desc -small m-card_info">Duração <strong>4h</strong></p>
+          <p class="m-info_desc -small m-card_info">Nível <strong>Iniciante</strong></p>
+
+          <a class="m-card_btn a-favorite" href="#menu-de-acesso" data-component="favorite" data-component-options='{ "itemId": 167, "type" : "CURSO_ONLINE", "noLogged" : true }'>Favoritar</a>
+      </div>
+    </div>
+  </div>
+    <a class="m-card_link" href="/cursos/educacao-financeira" data-tracking='{ "id": "box-courses" }'>Educa&#231;&#227;o Financeira</a>
+</article>
+
+<article class="m-card -title-cropped o-access_card swiper-slide -visual" data-card-id="206">
+  <div class="m-card_ctn">
+    <span class="m-card_icon -mobile -graph"></span>
+    <div class="m-card_hld">
+      <h3 class="m-card_title" data-component="ellipsis">Excel na Pr&#225;tica</h3>
+      <p class="m-card_desc" data-component="ellipsis" data-component-options>Este curso é perfeito para quem deseja elevar suas habilidades na criação de planilhas eficientes, realizar análises de dados complexas e automatizar tarefas no Excel, tornando suas atividades diárias mais produtivas e organizadas.
+
+Indicado tanto para iniciantes quanto para aqueles que já possuem algum conhecimento da ferramenta, este curso é uma excelente oportunidade para enriquecer seu currículo e aplicar o Excel em diversas áreas da sua vida, incluindo a organização financeira pessoal.
+
+Matricule-se agora e invista no seu aprendizado! Aplique seus conhecimentos em situações reais, otimize processos e tome decisões mais estratégicas, seja na sua carreira, no seu negócio ou em atividades pessoais. Transforme seu potencial com o poder do Excel!
+
+Detalhes
+
+Curso livre de 16 horas
+
+	Acesso 100% online
+	Estude no seu próprio ritmo
+
+Conteúdo Estruturado em Módulos
+
+
+	Orientações sobre funções visualizando telas do Excel
+	Vídeos demonstrativos para fácil entendimento
+	Atividades práticas
+
+Avaliação e Certificação
+
+
+	Conclusão depende de 100% das atividades realizadas
+	Avaliação final com mínimo de 70% de aproveitamento
+	Certificado gratuito após aprovação</p>
+      <div class="m-info m-card_foot">
+          <p class="m-info_desc -small m-card_info">Duração <strong>16h</strong></p>
+          <p class="m-info_desc -small m-card_info">Nível <strong>Iniciante</strong></p>
+
+          <a class="m-card_btn a-favorite" href="#menu-de-acesso" data-component="favorite" data-component-options='{ "itemId": 206, "type" : "CURSO_ONLINE", "noLogged" : true }'>Favoritar</a>
+      </div>
+    </div>
+  </div>
+    <a class="m-card_link" href="pages/curso.html" data-tracking='{ "id": "box-courses" }'>Excel na Pr&#225;tica</a>
+</article>
+        </div>
+        <div class="m-carousel-foot o-access_foot">
+          <div class="m-carousel-foot_controls">
+            <button type="button" class="m-carousel-foot_pag o-access_pagination" data-carousel-mostaccess-pagination data-carousel-mostaccess-prev></button>
+            <span class="a-progress-bar m-carousel-foot_bar o-access_bar -no-margin" data-carousel-mostaccess-bar>Barra de progresso</span>
+            <button type="button" class="m-carousel-foot_btn" data-carousel-mostaccess-next>Proximo</button>
+          </div>
+          <a href="pages/curso.html" class="a-btn -no-bg -bordered-red o-access_btn" data-tracking='{ "id": "box-courses" }'>Mostrar todos os cursos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="o-differentials">
+  <div class="v-ctn o-differentials_ctn">
+    <h2 class="o-differentials_title">Diferenciais</h2>
+    <h3 class="o-differentials_subtitle">Benefícios <br />que você vai querer.</h3>
+
+    <ul class="m-icon-list o-differentials_list">
+      <li class="m-icon-list_item o-differentials_list-item -dollar-sign">
+        <h4 class="m-icon-list_item-title">Estude de <br/>graça</h4>
+        <p class="m-icon-list_item-txt">
+          Você não paga nada para fazer os cursos. É só se matricular e começar a estudar de qualquer lugar que tenha conexão com a Internet.
+        </p>
+      </li>
+      <li class="m-icon-list_item o-differentials_list-item -curriculum">
+        <h4 class="m-icon-list_item-title">Turbine<br /> seu currículo</h4>
+        <p class="m-icon-list_item-txt">
+          São mais de 90 cursos para você estudar, enriquecer seu currículo e aumentar suas chances de ingresso no mercado de trabalho.
+        </p>
+      </li>
+      <li class="m-icon-list_item o-differentials_list-item -doc">
+        <h4 class="m-icon-list_item-title">Conquiste o seu certificado</h4>
+        <p class="m-icon-list_item-txt">
+          Ao ser aprovado nos cursos, você mesmo imprime o seu certificado!
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+<section class="o-trails v-carousel_hld">
+  <div class="v-ctn -full -no-pd">
+    <div class="o-trails_ctn">
+      <article class="o-trails_info">
+        <h2 class="a-title o-trails_title">
+          <span>Trilhas de Conhecimento</span>
+          Sequências de cursos preparadas para<br /> você se capacitar.
+        </h2>
+        <p class="o-trails_txt">Construa sua carreira com o passo a passo <br />
+        da trilha que você preferir e conquiste seu <br />
+        certificado exclusivo.</p>
+        <a class="a-btn -white -full o-trails_cta" href="/trilhas-de-conhecimento" data-tracking='{ "id": "box-top3", "lbl": "cursos relacionados" }'>Mostrar todas as trilhas</a>
+      </article>
+      <article class="o-trails_carousel v-carousel">
+        <div class="o-trails_carousel-wrp" data-tracking='{ "id": "box-top3-pagination", "carousel": true }' data-component="carousel" data-component-options='{
+          "freeMode": false,
+          "slidesPerView": "auto",
+          "scrollbar": {
+            "el": ".o-trails_bar",
+            "draggable": true,
+            "dragClass": "o-trails_track"
+          },
+          "pagination": {
+            "el": ".o-trails_pagination",
+            "type": "fraction"
+          },
+          "navigation": {
+            "nextEl": "[data-carousel-next-trails]",
+            "prevEl": "[data-carousel-prev-trails]"
+            }
+          }'>
+          <div class="swiper-wrapper">
+
+
+<article class="m-card -trails o-trails_item -trails -big swiper-slide" data-card-id="13">
+  <div class="m-card_ctn">
+    <div class="m-card_hld">
+      <h3 class="m-card_title">Excel 2016 (do b&#225;sico ao avan&#231;ado)</h3>
+      <p class="m-card_desc" data-component="ellipsis" data-component-options>O Excel 2016, que integra o Pacote Office 2016, foi lançado no segundo semestre de 2015 com o Windows 10 e trouxe novas e poderosas funcionalidades.
+
+Quando se trata de planilhas eletrônicas, o Excel é, sem dúvida, um dos programas mais utilizados no mundo!
+
+Seja para uso corporativo ou doméstico, as planilhas estão cada vez mais populares. Essa ferramenta é cheia de funcionalidades que facilitam muito o uso de cálculos matemáticos.
+
+Nossa Trilha de Conhecimento compila os cursos básico, intermediário e avançado, possibilitando que você tenha uma visão completa sobre a edição 2016 do software que integra o pacote Microsoft Office.</p>
+        <div class="m-list-icons">
+            <span class="m-list-icons_icon -graph  -visual"></span>
+        </div>
+      <div class="m-info m-card_foot">
+        <p class="m-info_desc -small m-card_info">Cursos <strong>3</strong></p>
+        <p class="m-info_desc -small m-card_info">Duração <strong>65h</strong></p>
+          <a class="m-card_btn a-favorite" href="#menu-de-acesso" data-component="favorite" data-component-options='{ "itemId": 13, "type" : "ROTEIRO_ESTUDO", "noLogged" : true }'>Favoritar</a>
+      </div>
+    </div>
+  </div>
+    <a class="m-card_link" href="/trilhas-de-conhecimento/excel-2016-do-basico-ao-avancado" data-tracking='{ "id": "box-top3", "lbl": "curso Excel 2016 (do b&#225;sico ao avan&#231;ado)" }'>Excel 2016 (do b&#225;sico ao avan&#231;ado)</a>
+
+</article>
+
+
+<article class="m-card -trails o-trails_item -trails -big swiper-slide" data-card-id="39">
+  <div class="m-card_ctn">
+    <div class="m-card_hld">
+      <h3 class="m-card_title">Intelig&#234;ncia Artificial para Organiza&#231;&#245;es do Terceiro Setor</h3>
+      <p class="m-card_desc" data-component="ellipsis" data-component-options>A inteligência artificial (IA) está redefinindo o potencial de impacto das organizações do terceiro setor, oferecendo novas formas de otimizar recursos, ampliar a atuação social e fortalecer o vínculo com comunidades. Este conteúdo propõe uma abordagem prática e estratégica sobre como a IA pode ser aplicada de forma ética, acessível e eficaz por instituições sem fins lucrativos.
+Nesta trilha, discutiremos os princípios e dilemas da ética na era da IA, incluindo transparência, privacidade e responsabilidade no uso de algoritmos em contextos sociais. Exploraremos como a IA pode transformar a comunicação e mobilização, personalizando campanhas, engajando públicos diversos e potencializando arrecadações. Também abordaremos a IA na prática, com foco em como dados bem estruturados fazem a diferença na geração de insights, na tomada de decisões e na construção de soluções mais eficazes. Este é um convite para que organizações sociais se apropriem da tecnologia como aliada na construção de um futuro mais justo, inteligente e eficiente.</p>
+        <div class="m-list-icons">
+            <span class="m-list-icons_icon -seal  -informatic"></span>
+        </div>
+      <div class="m-info m-card_foot">
+        <p class="m-info_desc -small m-card_info">Cursos <strong>4</strong></p>
+        <p class="m-info_desc -small m-card_info">Duração <strong>10h</strong></p>
+          <a class="m-card_btn a-favorite" href="#menu-de-acesso" data-component="favorite" data-component-options='{ "itemId": 39, "type" : "ROTEIRO_ESTUDO", "noLogged" : true }'>Favoritar</a>
+      </div>
+    </div>
+  </div>
+    <a class="m-card_link" href="/trilhas-de-conhecimento/inteligencia-artificial-para-organizacoes-do-terceiro-setor" data-tracking='{ "id": "box-top3", "lbl": "curso Intelig&#234;ncia Artificial para Organiza&#231;&#245;es do Terceiro Setor" }'>Intelig&#234;ncia Artificial para Organiza&#231;&#245;es do Terceiro Setor</a>
+
+</article>
+
+
+<article class="m-card -trails o-trails_item -trails -big swiper-slide" data-card-id="25">
+  <div class="m-card_ctn">
+    <div class="m-card_hld">
+      <h3 class="m-card_title">Intelig&#234;ncia Emocional</h3>
+      <p class="m-card_desc" data-component="ellipsis" data-component-options>Você já parou para pensar o que se passa em nossa cabeça quando estamos com raiva? Será que é possível manejar preocupação, ansiedade ou seremos sempre reféns dessas emoções? Você já pensou em quantas escolhas fazemos todos os dias?
+
+Fazemos escolhas o tempo inteiro, sejam elas em nossa vida pessoal ou profissional e precisamos lidar com essas emoções de medo, preocupação, ansiedade, impulsividade, raiva, vergonha e inveja!
+
+O primeiro passo para conseguir fazer isso é entender como essas emoções nascem, o que elas significam e como o nosso cérebro reforça e estrutura essas emoções.
+
+Nesta Trilha serão apresentadas estratégias efetivas para lidar com esses sentimentos, além de temas como o autoconhecimento, autocuidado, relações interpessoais, marketing pessoal, motivação, gestão de tempo, conceitos sobre moral, ética, diversidade cultural, projeto de vida, resiliência, além de conceitos sobre inovação e empreendedorismo.</p>
+        <div class="m-list-icons">
+            <span class="m-list-icons_icon -cappello  -professional"></span>
+        </div>
+      <div class="m-info m-card_foot">
+        <p class="m-info_desc -small m-card_info">Cursos <strong>4</strong></p>
+        <p class="m-info_desc -small m-card_info">Duração <strong>16h</strong></p>
+          <a class="m-card_btn a-favorite" href="#menu-de-acesso" data-component="favorite" data-component-options='{ "itemId": 25, "type" : "ROTEIRO_ESTUDO", "noLogged" : true }'>Favoritar</a>
+      </div>
+    </div>
+  </div>
+    <a class="m-card_link" href="/trilhas-de-conhecimento/inteligencia-emocional" data-tracking='{ "id": "box-top3", "lbl": "curso Intelig&#234;ncia Emocional" }'>Intelig&#234;ncia Emocional</a>
+
+</article>
+          </div>
+        <div class="o-trails_access">
+          <button class="o-trails_back-btn -prev-slide" data-carousel-prev-trails></button>
+          <span class="o-trails_pagination">pagination</span>
+          <span class="o-trails_bar">scrollbar</span>
+          <button class="o-trails_next-btn -next-slide" data-carousel-next-trails></button>
+        </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+  
+
+<section class="o-partnerships">
+    <div class="v-ctn o-partnerships_ctn">
+      <h2 class="o-partnerships_title">Parcerias</h2>
+      <h3 class="o-partnerships_subtitle">Conheça os nossos<br /> parceiros</h3>
+
+      <div class="v-carousel o-partnerships_carousel">
+      <div
+        class="o-partnerships_carousel-container"
+        data-component="carousel"
+        data-component-options='{
+          "watchOverflow": true,
+          "slidesPerView": "auto",
+          "scrollbar": {
+            "el": "[data-carousel-partnerships-bar]",
+            "draggable": true,
+            "dragClass": "carousel-bar"
+          },
+          "navigation": {
+            "nextEl": "[data-carousel-partnerships-next]",
+            "prevEl": "[data-carousel-partnerships-prev]"
+          },
+          "breakpoints": {
+            "1196": {
+              "centerInsufficientSlides": true,
+              "pagination": {
+                "el": "[data-carousel-partnerships-pagination]",
+                "type": "fraction"
+              }
+            }
+          }
+        }'>
+        <div class="swiper-wrapper o-partnerships_carousel-wrapper">
+<div class="m-partner-cta swiper-slide o-partnerships_item">
+  <a href="/parcerias/bradesco-seguros" class="m-partner-cta_link">
+    <picture class="m-partner-cta_picture">
+      <img src="assets/img/parceria-49f0.png" alt="Bradesco Seguros">
+    </picture>
+    <p class="m-partner-cta_cta">Conheça mais</p>
+  </a>
+</div><div class="m-partner-cta swiper-slide o-partnerships_item">
+  <a href="/parcerias/instituto-crescer" class="m-partner-cta_link">
+    <picture class="m-partner-cta_picture">
+      <img src="assets/svg/parceria-crescer.svg" alt="Instituto Crescer">
+    </picture>
+    <p class="m-partner-cta_cta">Conheça mais</p>
+  </a>
+</div><div class="m-partner-cta swiper-slide o-partnerships_item">
+  <a href="/parcerias/microsoft" class="m-partner-cta_link">
+    <picture class="m-partner-cta_picture">
+      <img src="assets/img/parceria-programa-semente.png" alt="Microsoft">
+    </picture>
+    <p class="m-partner-cta_cta">Conheça mais</p>
+  </a>
+</div><div class="m-partner-cta swiper-slide o-partnerships_item">
+  <a href="/parcerias/programa-semente" class="m-partner-cta_link">
+    <picture class="m-partner-cta_picture">
+      <img src="assets/img/parceria-bradesco-seguros.png" alt="Programa Semente">
+    </picture>
+    <p class="m-partner-cta_cta">Conheça mais</p>
+  </a>
+</div><div class="m-partner-cta swiper-slide o-partnerships_item">
+  <a href="/parcerias/unibrad" class="m-partner-cta_link">
+    <picture class="m-partner-cta_picture">
+      <img src="assets/svg/parceria-microsoft.svg" alt="Unibrad">
+    </picture>
+    <p class="m-partner-cta_cta">Conheça mais</p>
+  </a>
+</div>        </div>
+      </div>
+    </div>
+    <div class="m-carousel-foot o-partnerships_carousel-foot">
+      <div class="m-carousel-foot_controls">
+        <button type="button" class="m-carousel-foot_pag o-partnerships_pagination" data-carousel-partnerships-pagination data-carousel-partnerships-prev></button>
+        <span class="a-progress-bar m-carousel-foot_bar o-partnerships_bar -no-margin" data-carousel-partnerships-bar>Barra de progresso</span>
+        <button type="button" class="m-carousel-foot_btn" data-carousel-partnerships-next>Proximo</button>
+      </div>
+      <a href="/parcerias" class="a-btn -no-bg -bordered-red o-partnerships_btn">Mostrar todos os parceiros</a>
+    </div>
+    </div>
+  </section>
+
+
+
+
+<section class="o-faq">
+  <div class="v-ctn o-faq_ctn">
+    <div class="o-faq_hld">
+      <h2 class="o-faq_title">Perguntas Frequentes</h2>
+      <div class="m-accordion">
+          <dl class="m-accordion_item o-faq_item" data-component="accordion">
+            <dt class="m-accordion_prev -border" data-accordion-button data-tracking='{ "id": "faq" }'>Onde está localizado o certificado?</dt>
+            <dd class="m-accordion_ctt" data-accordion-list>
+              <div>
+                <p>Após realizar a avaliação e ser <strong>aprovado(a)</strong>, para ter acesso ao certificado é necessário <strong>concluir o curso</strong>. Para isso, <strong>clique no botão 'Mais opções &gt; Fechar matrículas'. &nbsp; &nbsp; &nbsp;</strong><br />
+&nbsp;<br />
+Após isso seu certificado estará disponível no <strong>histórico</strong>,<strong> </strong>siga as instruções abaixo:</p>
+
+<p>1 - Acesse a <strong>Escola Virtual</strong> (www.ev.org.br)<br />
+2 - No cabeçalho da página, clique em <strong>Acessar</strong><br />
+3 - Informe seu <strong>login </strong>(CPF ou e-mail cadastrado) e a <strong>senha&nbsp;</strong>(também é possível entrar utilizando uma rede social)<br />
+4 - Clique em <strong>Acessar</strong><br />
+5 - Clique em<strong> Área do Aluno</strong><br />
+6 - Clique em <strong>Histórico de Cursos&nbsp;</strong>(é neste local que estão todos os cursos feitos por você, aprovados ou reprovados)<br />
+7 - Clique no <strong>nome do curso que deseja imprimir o certificado</strong> (com situação aprovado)<br />
+8 - Clique no botão <strong>Imprimir Certificado&nbsp;</strong><br />
+9 - O certificado será exibido na tela<br />
+10 - Clique no botão <strong>Imprimir </strong>(localizado no topo da tela)<br />
+11 - O certificado será enviado para sua impressora (para <strong>salvar </strong>clique em <strong>download </strong>ou selecione sua <strong>impressora PDF</strong>)<br />
+&nbsp;</p>
+
+              </div>
+            </dd>
+          </dl>
+          <dl class="m-accordion_item o-faq_item" data-component="accordion">
+            <dt class="m-accordion_prev -border" data-accordion-button data-tracking='{ "id": "faq" }'>Como realizar a matrícula nos cursos?</dt>
+            <dd class="m-accordion_ctt" data-accordion-list>
+              <div>
+                <p>Caso ainda não tenha, é necessário realizar um <strong>cadastro </strong>em nosso portal, preenchendo um formulário (é simples e rápido)!</p>
+
+<p>Ao término do cadastro, você já terá seu<strong> login e senha de acesso</strong> e poderá realizar a matrícula nos cursos disponíveis em nosso catálogo.<br />
+<br />
+<a href="https://www.youtube.com/embed/SLuJguvou5M">Cique aqui</a>&nbsp;para assistir ao vídeo que explica, de forma breve, como é a jornada do aluno em nosso site.</p>
+
+<p><strong>MATRÍCULA NO CURSO PELO PORTAL DA ESCOLA VIRTUAL</strong></p>
+
+<p>1 - Acesse a <strong>Escola Virtual</strong> (www.ev.org.br)<br />
+2 - No cabeçalho da página, clique em <strong>Acessar</strong><br />
+3 - Informe o <strong>login </strong>(CPF ou e-mail) e a respectiva <strong>senha&nbsp;</strong>(também é possível entrar utilizando uma rede social)<br />
+4 - Clique em <strong>Acessar</strong><br />
+5 - Nesta mesma página, clique em <strong>Cursos</strong>&nbsp;(está localizado logo abaixo da logomarca da Fundação Bradesco | Escola Virtual)<br />
+6 - Basta escolher a <strong>área de interesse</strong> e o <strong>curso desejado</strong><br />
+7 - Ao final da página com as informações sobre o curso, clique no botão <strong>Quero me matricular</strong>, que sua matrícula será realizada automaticamente</p>
+
+<p><strong>ATENÇÃO: </strong>Ao clicar em&nbsp;<strong>Quero me matricular</strong>, o botão ficará cinza e o sistema poderá demorar alguns segundos para processar a solicitação. <strong>Por favor, aguarde!</strong></p>
+8 - Clique em <strong>Minhas Matrículas</strong><br />
+9 - Clique no <strong>nome do curso</strong> em que você foi matriculado(a)<br />
+10 - Clique em <strong>Exibir curso</strong><br />
+<br />
+Você também pode clicar no botão&nbsp;<strong>Acessar&nbsp;</strong>existente ao lado do nome do curso, no passo 9.<br />
+&nbsp;
+<p><strong>MATRÍCULA NO CURSO PELA ÁREA DO ALUNO</strong></p>
+
+<p>1 - Acesse a <strong>Escola Virtual </strong>(www.ev.org.br)<br />
+2 - No cabeçalho da página, clique em <strong>Acessar</strong><br />
+3 - Informe o <strong>login</strong> (CPF ou e-mail) e a respectiva <strong>senha&nbsp;</strong>(também é possível entrar utilizando uma rede social)<br />
+4 - Clique em <strong>Acessar</strong><br />
+5 - Clique em <strong>Área do Aluno</strong><br />
+6 - Clique em <strong>Catálogo de Cursos</strong><br />
+7 - Desça a tela até o fim e você encontrará os <strong>cursos em que pode se matricular</strong> (o sistema já apresenta algumas opções)<br />
+8 -&nbsp;Você pode pesquisar o <strong>curso pelo nome</strong> ou pelas <strong>áreas de interesse</strong><br />
+10 - No card do curso, clique em <strong>Matricule-se</strong><br />
+11 - Para ter acesso ao conteúdo, clique em <strong>Exibir Curso</strong></p>
+
+<p>Pronto! Você já terá acesso ao conteúdo dos cursos.</p>
+
+              </div>
+            </dd>
+          </dl>
+          <dl class="m-accordion_item o-faq_item" data-component="accordion">
+            <dt class="m-accordion_prev -border" data-accordion-button data-tracking='{ "id": "faq" }'>Ao finalizar um curso, recebo um certificado?</dt>
+            <dd class="m-accordion_ctt" data-accordion-list>
+              <div>
+                <p>Sim!</p>
+
+<p>Após realizar a avaliação final do curso e obter o aproveitamento igual ou superior a 70%, você será aprovado e poderá realizar a impressão do <strong>Certificado de Conclusão.</strong></p>
+
+<p>Alguns cursos da Escola Virtual não têm a avaliação final.&nbsp;Para esses casos, são emitidos <strong>Certificados de Participação.</strong></p>
+
+              </div>
+            </dd>
+          </dl>
+
+        <a href="/faq" class="o-faq_link" data-tracking='{ "id": "faq" }'>Mostrar todas as perguntas</a>
+      </div>
+    </div>
+    <div class="o-faq_highlight">
+      <p class="o-faq_tip">
+        Quer iniciar a sua <br />jornada de conhecimento? <br />É grátis!
+      </p>
+      <a href="pages/curso.html" class="a-btn -bordered-light o-faq_cta" data-tracking='{ "id": "faq", "lbl": "todos os cursos" }'>Começar agora</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+  </main>
+  
+<style>
+    .o-footer_link.-icon.-cell.-disabled-performa {
+      display: none;
+    }
+
+    .o-footer_link.-icon.-cell.-disabled-performa:hover {
+      display: none;
+    }
+</style>
+
+
+
+<footer class="o-footer">
+  <div class="v-ctn">
+    <div class="o-footer_head">
+      <div class="o-footer_logo">
+        <a href="/" class="o-footer_logo-link">
+          <img src="assets/svg/escola_virtual_horizontal_full.svg" alt="fundação bradesco | escola virtual" class="o-footer_img">
+        </a>
+      </div>
+      <div class="o-footer_socials">
+        <p class="o-footer_desc">
+          Fundação Bradesco <br /><span>Nossas redes</span>
+        </p>
+        <ul class="m-socials o-footer_socials-list">
+          <li class="m-socials_item">
+            <a href="https://www.youtube.com/channel/UCPm_7G9UZwJXJQuQNKh6NIg/" target="_blank" class="m-socials_link -youtube" data-tracking='{ "id": "footnote-social" }'>Youtube</a>
+          </li>
+          <li class="m-socials_item">
+            <a href="https://www.instagram.com/fundacao.bradesco" target="_blank" class="m-socials_link -instagram" data-tracking='{ "id": "footnote-social" }'>Instagram</a>
+          </li>
+          <li class="m-socials_item">
+            <a href="https://www.facebook.com/Funda%C3%A7%C3%A3o-Bradesco-309300189970322" target="_blank" class="m-socials_link -faceboook" data-tracking='{ "id": "footnote-social" }'>Facebook</a>
+          </li>
+          <li class="m-socials_item">
+            <a href="https://www.linkedin.com/school/fundacaobradesco/" target="_blank" class="m-socials_link -linkedin" data-tracking='{ "id": "footnote-social" }'>LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="o-footer_body" data-component="accordion">
+      <div class="o-footer_info">
+        <div class="o-footer_help">
+          <div>
+            <p class="a-label -bottom">Precisa de ajuda?</p>
+            <address class="o-footer_contact">
+              <ul class="o-footer_list -bigger">
+                <li class="o-footer_item">
+                  <a href="/faq" class="o-footer_link a-border-icon -perfre m-border-list_link">Perguntas frequentes</a>
+                </li>
+                <li class="o-footer_item">
+                  <a href="/validar-certificado" class="o-footer_link -icon -doc-2" data-tracking='{ "id": "footnote" }'>
+                    Validação de Certificado <br>
+                    
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <button class="o-footer_link -arrow" data-accordion-button>Acesso rápido</button>
+      </div>
+      <div class="o-footer_sitemap_hld" data-accordion-list>
+        <div class="o-footer_sitemap">
+          <div class="o-footer_area">
+            <p class="a-label">Privacidade</p>
+            <ul class="o-footer_list padding-bottom-personalizado">
+              <li class="o-footer_item">
+                <a href="https://fundacao.bradesco/diretiva-de-privacidade" target="_blank" class="o-footer_link -icon -lock" data-tracking='{ "id": "footnote" }'>Diretiva de Privacidade</a>
+              </li>
+              <li class="o-footer_item">
+                <a target="_blank" class="o-footer_link link_termos_uso" data-tracking='{ "id": "footnote" }' href="#UseTerms">Termos e Condições de Uso da Escola Virtual</a>
+              </li>
+            </ul>
+            <p class="a-label">Escola Virtual</p>
+            <ul class="o-footer_list padding-bottom-personalizado">
+              <li class="o-footer_item">
+                <a href="/escola-virtual" class="o-footer_link" data-tracking='{ "id": "footnote", "lbl": "escola virtual sobre" }'>Sobre</a>
+              </li>
+              
+            </ul>
+          </div>
+          <div class="m-accordion_item itens-acordeon" data-component="accordion">
+            <p data-accordion-button class="a-label -spaced m-accordion_prev acordeon_prev"><span class="ajuste-cor-accordion"> <i>Sites</i> da Organização</span></p>
+            
+            <ul class="o-footer_list m-accordion_ctt config_margem_acordeon padding-bottom-personalizado" aria-hidden="true" data-accordion-list>
+
+              <li class="o-footer_item">
+                <a href="https://banco.bradesco/" target="_blank" class="o-footer_link" data-tracking='{ "id": "footnote-reference" }'>Bradesco</a>
+              </li>
+              <li class="o-footer_item">
+                <a href="https://fundacao.bradesco/" target="_blank" class="o-footer_link" data-tracking='{ "id": "footnote-reference" }'>Institucional</a>
+              </li>
+              <li class="o-footer_item">
+                <a href="http://www.fundacaobradesco.org.br/museu/museu.asp" target="_blank" class="o-footer_link" data-tracking='{ "id": "footnote-reference" }'>Museu Histórico Bradesco</a>
+              </li>
+              <li class="o-footer_item">
+                <a href="https://www.educacao.org.br/" target="_blank" class="o-footer_link" data-tracking='{ "id": "footnote-reference" }'>Portal de Educação</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="o-footer_foot">
+    <small class="o-footer_disclaimer">Fundação Bradesco - Escola Virtual <span>Todos os direitos reservados</span></small>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/bia.js"></script>
+</body>
+</html>
