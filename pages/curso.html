@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel na Prática - Cursos | Fundação Bradesco - Escola Virtual</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/svg/icons/bradesco-logo-white.svg" />
+  <meta name="description" content="Fundação Bradesco - Escola Virtual" />
+  <meta name="theme-color" content="#f31656" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/paginas.css" />
+  <link rel="stylesheet" href="../css/bia.css" />
+</head>
+<body>
+<header class="o-header">
+  <span class="o-header_overlay" data-component="modal" data-component-options-overlay></span>
+  <div class="o-header_hld " data-sticky>
+    <div class="v-ctn -no-pd o-header_ctn">
+      <div class="o-header_wpp">
+        <div class="o-header_title" data-sticky-title>
+          
+          <a href="../index.html" class="o-header_title-link">
+            <img src="../assets/svg/escola_virtual_horizontal_full.svg" alt="fundação bradesco | escola virtual" class="o-header_title-img">
+          </a>
+        </div>
+        <form autocomplete="off" class="m-search-bar o-header_search" action="/busca" method="get" data-sticky-search>
+          <div class="m-input_field m-search-bar_field" data-component="input" data-sticky-search-field>
+            <input type="text" name="s" id="header-search" data-input-field class="m-input_input -white -no-border m-search-bar_input" data-rules='{"maxlength": 50, "searchFormat": true}' maxlength="50" data-tracking='{ "id": "header-focus", "lbl": "[Focus] busca" }'>
+            <label class="m-input_placeholder -white -small" for="header-search">Digite sua busca</label>
+          </div>
+          <button class="a-search o-header_search-btn" type="submit" data-tracking='{ "id": "header", "lbl": "busca clique" }'>Buscar</button>
+        </form>
+      </div>
+      <div class="o-header_actions">
+
+          <a class="m-access-bar_login -icon" href="/entrar">Acessar</a>
+              <a href="/cadastro?ReturnUrl=https://www.ev.org.br/" class="a-btn -small m-access-bar_register">Cadastrar</a>
+      </div>
+
+      <div class="m-access o-header_access">
+          <a href="#menu-de-acesso" class="m-access_avatar -no-logged" aria-label="Acesso">Acesso</a>
+
+
+<div class="halley_modal t-modal -shadow -bottom o-header_modal" data-component="modal" data-component-options='{ "hashHistory": false, "disableEvents": true }' id="menu-de-acesso">
+  <div class="t-modal_overlay -no-mb" halley-modal-close></div>
+  <div class="t-modal_ctn o-header_modal_ctn">
+    <div class="m-access_modal">
+        <button class="a-close m-menu_close -access -no-bg  -deep" halley-modal-close>Fechar</button>
+
+      <div class="m-menu_wpp">
+          <div class="m-access_login -compressed">
+            <p class="m-access_login-title">Bem-vindo de volta!</p>
+            <form action="/api/login" method="POST" data-component="login">
+              
+
+              <input name="__RequestVerificationToken" type="hidden" value="C6Qo8wDyX07stuMWLrTVyAKfc0vLWJHnIVWDuOqMx92pFjtDf7VXL8Q3NmFQyBjfe6UjGHXiVnyrlvhJ_IN_lYO2BjYTyVXyeDyiLGUf4ehdhvtAqiG840NMruAQIxerbjShabgY5G3RehjdkUmnn-djn9PdfU-Jf6o3zKb0hOc1" />
+
+              <div class="m-input_field m-access_login-field" data-component="input">
+                <input type="text" name="Login" id="login-modal" data-login-email data-input-field data-rules='{ "required": true, "maxlength": 100 }' maxlength="100" class="m-input_input m-access_login-input">
+                <label class="m-input_placeholder -small" for="login-modal">CPF ou <em>E-mail</em></label>
+              </div>
+              <div class="m-input_field m-access_login-field" data-component="input">
+                <input type="password" name="Senha" id="login-modal-pass" data-login-password data-input-field data-rules='{ "required": true, "maxlength": 32 }' maxlength="32" class="m-input_input m-access_login-input">
+                <label class="m-input_placeholder -small" for="login-modal-pass">Senha</label>
+              </div>
+
+              <a href="/esqueci-senha" class="m-access_login-forgot">
+                Esqueci minha senha
+              </a>
+              <input type="hidden" name="Favoritos" data-favorite-localstorage>
+              <button class="a-btn --disabled -full m-access_login-cta" type="submit" disabled>Acessar</button>
+
+                <div class="m-social o-social-form_hdr -no-padding" data-component="oauth-login">
+                  <h2 class="o-social-title -margin">Entrar utilizando uma rede social</h2>
+                  <div class="m-social_btn-hdr">
+                    
+                    <button type="button" class="a-social-btn -google m-social-btn" data-google><span>Continuar com o Google</span></button>
+                    <button type="button" class="a-social-btn -facebook m-social-btn" data-facebook><span>Continuar com o Facebook</span></button>
+                    <button type="button" class="a-social-btn -linkedin m-social-btn" data-linkedin><span>Continuar com o LinkedIn</span></button>
+                  </div>
+                </div>
+              <small class="m-access_login-recaptcha">
+                Este <i>site</i> é protegido pelo reCAPTCHA e se aplicam a <a target="_blank" href="https://policies.google.com/privacy?hl=pt-BR">Política de Privacidade</a> e os <a target="_blank" href="https://policies.google.com/terms?hl=pt-BR">Termos de Uso</a> do Google.
+              </small>
+              
+            </form>
+          </div>
+      </div>
+
+        
+          <div class="m-menu-cta m-menu_cta">
+            <p class="m-menu-cta_text">Ainda não tem acesso? Estude com a gente :)</p>
+
+            <div class="m-menu-cta_btn-hld">
+                  <a href="/cadastro?ReturnUrl=https://www.ev.org.br/" class="a-btn -no-bg -full m-menu-cta_link -login">Cadastrar</a>
+            </div>
+          </div>
+        
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+      </div>
+
+      
+
+<nav class="m-nav o-header_menu" data-component="nav">
+  <ul class="m-nav_list">
+    <li class="m-nav_item"><a href="../index.html" data-nav-link class="m-nav_link home ">Home</a></li>
+    <li class="m-nav_item"><a href="/busca" data-nav-link class="m-nav_link search ">Busca</a></li>
+    <li class="m-nav_item"><a href="curso.html" data-nav-link class="m-nav_link cappello -active ">Cursos</a></li>
+    
+    <li class="m-nav_item"><a href="#menu" data-nav-link class="m-nav_link menu">Menu</a></li>
+  </ul>
+
+  
+<div class="halley_modal t-modal -top -shadow" data-nav-menu id="menu">
+  <div class="t-modal_ctn">
+    <div class="m-menu">
+      <button class="a-close m-menu_close" data-nav-link-menu halley-modal-close>Fechar</button>
+
+      <div class="m-menu_wpp">
+        <ul class="m-border-list m-menu_list -padding">
+
+          <li class="m-border-list_item" data-submenu>
+            <span class="m-border-list_link -sub" data-submenu-open>Cursos</span>
+
+            <div class="m-submenu -flex m-border-list_submenu" data-submenu-list>
+              <div class="m-submenu_head">
+                <button class="m-submenu_back" data-submenu-back>Voltar</button>
+                <p class="m-submenu_title">Cursos</p>
+                <small class="m-submenu_small">Gratuitos e 100% <em>on-line</em></small>
+              </div>
+
+              <div class="m-submenu_foot">
+                <div class="m-menu_list">
+                  <ul class="m-border-list">
+                    
+                    
+                    <li class="m-border-list_item"><a href="curso.html" class="m-border-list_link">Todos os cursos</a></li>
+                    <li class="m-border-list_item"><a id="botao-areas-de-interesse" halley-modal-close href="javascript: acessaConteudo('animation-area-interesse')" class="m-border-list_link">Área de Interesse</a></li>
+                    <li class="m-border-list_item"><a href="/trilhas-de-conhecimento" class="m-border-list_link">Trilhas de Conhecimento</a></li>
+                    <li class="m-border-list_item">
+                      <a href="/validar-certificado" class="m-border-list_link" data-tracking='{ "id": "header-courses" }'>
+                        <p class="a-border-icon -certify -small-text">Validação de certificado</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="m-border-list_item" data-submenu>
+            <span class="m-border-list_link -sub" data-submenu-open data-tracking='{ "id" : "header" }'>Ajuda</span>
+            <div class="m-submenu m-border-list_submenu" data-submenu-list>
+              <div class="m-submenu_head">
+                <button class="m-submenu_back" data-submenu-back>Voltar</button>
+                <p class="m-submenu_title">Ajuda</p>
+                <small class="m-submenu_small">Como podemos te ajudar?</small>
+              </div>
+              <ul class="m-border-list m-menu_list">
+                <li class="m-border-list_item"><a href="/faq" class="m-border-list_link" data-tracking='{ "id" : "header-help" }'>Perguntas Frequentes</a></li>
+                
+                <li class="m-border-list_item">
+                  <a href="#bia-tutora" class="m-border-list_link" halley-modal-close onclick="event.preventDefault(); if (window.BIA) window.BIA.open('curso');" data-tracking='{ "id" : "header-help" }'>
+                    <p class="a-border-icon -chat"><em>BIA Tutora</em></p>
+                  </a>
+                </li>
+                
+                
+              </ul>
+
+            </div>
+          </li>
+          <li class="m-border-list_item"><a href="/parcerias" class="m-border-list_link" data-tracking='{ "id": "header" }'>Parcerias</a></li>
+          <li class="m-border-list_item"><a href="/escola-virtual" class="m-border-list_link" data-tracking='{ "id": "header" }'>Sobre</a></li>
+          <li class="m-border-list_item"><a href="/acessibilidade" class="m-border-list_link" data-tracking='{ "id": "header-courses" }'><p class="a-border-icon -icon -eye -small -small-text">Informática para Pessoas com Deficiência Visual</p></a></li>
+          
+        </ul>
+
+        <a href="/validar-certificado" class="m-certified" data-tracking='{ "id": "header-courses", "lbl": "Validação de certificado" }'>
+          <p class="a-border-icon -certify">Validação de certificado</p>
+        </a>
+      </div>
+
+        
+          <div class="m-menu-cta m-menu_cta">
+            <p class="m-menu-cta_text">Já é nosso aluno? Identifique-se para acessar.</p>
+
+            <div class="m-menu-cta_btn-hld">
+              <a href="#menu-de-acesso" class="a-btn -full -shadow m-menu-cta_link">Acessar</a>
+                  <a href="/cadastro?ReturnUrl=https://www.ev.org.br/" class="a-btn -full -no-bg m-menu-cta_link">Cadastrar</a>
+            </div>
+          </div>
+        
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</nav>
+
+    </div>
+    <div class="v-ctn -no-pd o-header_ctn o-header_top-menu-ctn" data-sticky-nav>
+      
+
+<nav class="m-top-menu o-header_top-menu">
+  <ul class="m-top-menu_list">
+    <li class="m-top-menu_item">
+      <a href="../index.html" data-tracking='{ "id" : "header", "lbl": "Ínicio" }' class="m-top-menu_link " accesskey="i">Início</a>
+    </li>
+    <li class="m-top-menu_item">
+      <a href="curso.html" class="m-top-menu_link -active " data-tracking='{ "id" : "header", "lbl": "Cursos" }' accesskey="c">Cursos</a>
+    </li>
+    <li class="m-top-menu_item">
+      <a href="/parcerias" data-tracking='{ "id" : "header", "lbl": "Parcerias" }' class="m-top-menu_link " accesskey="p">Parcerias</a>
+    </li>
+    <li class="m-top-menu_item">
+      <a href="/escola-virtual" data-tracking='{ "id" : "header", "lbl": "Sobre" }' class="m-top-menu_link " accesskey="s">Sobre</a>
+    </li>
+
+    <li class="m-top-menu_item">
+
+      <a href="#ajuda" data-tracking='{ "id" : "header", "lbl": "Ajuda" }' class="m-top-menu_link -submenu " accesskey="a">Ajuda</a>
+    </li>
+  </ul>
+</nav>
+
+    </div>
+  </div>
+
+  <div class="o-header_modals">
+    <div class="halley_modal t-modal -bottom -fade-y" data-component="modal" data-component-options='{}' id="cursos">
+  <div class="t-modal_ctn">
+    
+<div class="m-menu">
+  <div class="m-menu_wpp">
+    <div class="m-submenu -flex">
+      <div class="m-submenu_head">
+        <div class="v-ctn">
+          <button class="a-close m-menu_close -top" halley-modal-close>Fechar</button>
+          <p class="m-submenu_title">Cursos</p>
+          <small class="m-submenu_small">Gratuitos e 100% <em>on-line</em></small>
+        </div>
+      </div>
+      <div class="v-ctn m-menu_list v-scroll_red">
+        <ul class="m-border-list">
+          
+          
+          <li class="m-border-list_item"><a href="curso.html" class="m-border-list_link">Todos os cursos</a></li>
+          <li class="m-border-list_item"><a id="botao-areas-de-interesse" halley-modal-close href="javascript: acessaConteudo('animation-area-interesse')" class="m-border-list_link">Área de Interesse</a></li>
+          <li class="m-border-list_item"><a href="/trilhas-de-conhecimento" class="m-border-list_link">Trilhas de Conhecimento</a></li>
+          <li class="m-border-list_item">
+            <a href="/validar-certificado" class="m-border-list_link" data-tracking='{ "id": "header-courses" }'>
+              <p class="a-border-icon -certify">Validação de certificado</p>
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+  <div class="m-menu-cta m-menu_cta">
+    <div class="v-ctn">
+        
+          <p class="m-menu-cta_text">Já é nosso aluno? Identifique-se para acessar.</p>
+
+          <div class="m-menu-cta_btn-hld">
+              <a href="/cadastro?ReturnUrl=https://www.ev.org.br/" class="a-btn -no-bg m-menu-cta_link">Cadastrar</a>
+          </div>
+        
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+    <div class="halley_modal t-modal -bottom -fade-y" data-component="modal" data-component-options='{}' id="ajuda">
+  <div class="t-modal_ctn">
+    <div class="m-menu">
+  <div class="m-menu_wpp">
+    <div class="m-submenu">
+      <div class="m-submenu_head">
+        <div class="v-ctn">
+          <button class="a-close m-menu_close -top" halley-modal-close>Fechar</button>
+          <p class="m-submenu_title">Ajuda</p>
+          <small class="m-submenu_small">Como podemos te ajudar?</small>
+        </div>
+      </div>
+      <ul class="v-ctn m-border-list m-menu_list">
+        <li class="m-border-list_item">
+          <a class="a-border-icon -perfre m-border-list_link" href="/faq" class="m-border-list_link" data-tracking='{ "id": "header-help" }'>
+            Perguntas Frequentes
+          </a>
+        </li>
+        
+
+
+          <li class="m-border-list_item">
+            <a href="#bia-tutora" class="a-border-icon -chat m-border-list_link" halley-modal-close onclick="event.preventDefault(); if (window.BIA) window.BIA.open('curso');" data-tracking='{ "id": "header-help" }'>
+              <em>BIA Tutora</em>
+            </a>
+          </li>
+
+        
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+</header>
+
+<main class="v-main pg" id="conteudo-principal">
+
+  <section class="pg-hero">
+    <div class="pg-ctn">
+      <nav aria-label="Você está em">
+        <ol class="pg-breadcrumb">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../index.html#areas-de-interesse">Produtividade</a></li>
+          <li aria-current="page">Excel na Prática</li>
+        </ol>
+      </nav>
+
+      <div class="pg-hero_grid">
+        <div>
+          <span class="pg-hero_tag"><img src="../assets/svg/icons/graph.svg" alt=""> Produtividade</span>
+          <h1 class="pg-hero_title">Excel na Prática</h1>
+          <p class="pg-hero_desc">Crie planilhas eficientes, analise dados e automatize tarefas no Excel. Ideal para quem está começando e para quem quer enriquecer o currículo.</p>
+          <div class="pg-hero_ctas">
+            <a href="atividade.html" class="pg-btn">Começar agora</a>
+            <button type="button" class="pg-btn -ghost" onclick="BIA.open('curso')">Tirar dúvidas com a BIA</button>
+          </div>
+        </div>
+
+        <aside class="pg-hero_card">
+          <h2>Sobre o curso</h2>
+          <ul class="pg-facts">
+            <li><small>Duração</small><strong>16h</strong></li>
+            <li><small>Nível</small><strong>Iniciante</strong></li>
+            <li><small>Módulos</small><strong>4</strong></li>
+            <li><small>Valor</small><strong>Gratuito</strong></li>
+          </ul>
+          <a href="atividade.html" class="pg-btn">Matricule-se</a>
+          <p class="pg-hero_card-note">Certificado gratuito após aprovação</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="pg-section">
+    <div class="pg-ctn pg-two">
+      <div class="pg-text">
+        <h2 class="pg-section_title">Apresentação</h2>
+        <h3 class="pg-section_sub">Transforme seu potencial com o poder do Excel</h3>
+        <p>Este curso é perfeito para quem deseja elevar suas habilidades na criação de planilhas eficientes, realizar análises de dados e automatizar tarefas, tornando as atividades do dia a dia mais produtivas e organizadas.</p>
+        <p>Indicado tanto para iniciantes quanto para quem já tem algum conhecimento da ferramenta. Aplique o Excel em diversas áreas da sua vida, incluindo a organização financeira pessoal.</p>
+      </div>
+      <div>
+        <h2 class="pg-section_title">Você vai aprender</h2>
+        <ul class="pg-checks">
+          <li>Organizar dados e formatar planilhas profissionais</li>
+          <li>Usar fórmulas e funções como SOMA, MÉDIA, SE e PROCV</li>
+          <li>Criar gráficos e tabelas dinâmicas</li>
+          <li>Automatizar tarefas repetitivas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="pg-section -gray">
+    <div class="pg-ctn">
+      <h2 class="pg-section_title">Conteúdo programático</h2>
+      <h3 class="pg-section_sub">4 módulos, no seu ritmo</h3>
+      <ol class="pg-modules" data-modules>
+        <li class="pg-module -open">
+          <button type="button" class="pg-module_btn" aria-expanded="true">
+            <span class="pg-module_num">1</span>
+            <span class="pg-module_title">Primeiros passos no Excel<small>3 aulas · 3h</small></span>
+            <span class="pg-module_arrow" aria-hidden="true">⌄</span>
+          </button>
+          <div class="pg-module_ctt">
+            <ul>
+              <li>Conhecendo a interface</li>
+              <li>Células, linhas e colunas</li>
+              <li>Formatação de planilhas</li>
+            </ul>
+          </div>
+        </li>
+        <li class="pg-module">
+          <button type="button" class="pg-module_btn" aria-expanded="false">
+            <span class="pg-module_num">2</span>
+            <span class="pg-module_title">Fórmulas e funções<small>4 aulas · 5h</small></span>
+            <span class="pg-module_arrow" aria-hidden="true">⌄</span>
+          </button>
+          <div class="pg-module_ctt">
+            <ul>
+              <li>Operações básicas e referências</li>
+              <li>SOMA, MÉDIA, MÁXIMO e MÍNIMO</li>
+              <li>Função SE: tomando decisões</li>
+              <li>PROCV e PROCX</li>
+            </ul>
+            <a href="atividade.html" class="pg-btn -small -outline">Ir para a aula "Função SE"</a>
+          </div>
+        </li>
+        <li class="pg-module">
+          <button type="button" class="pg-module_btn" aria-expanded="false">
+            <span class="pg-module_num">3</span>
+            <span class="pg-module_title">Análise de dados<small>3 aulas · 4h</small></span>
+            <span class="pg-module_arrow" aria-hidden="true">⌄</span>
+          </button>
+          <div class="pg-module_ctt">
+            <ul>
+              <li>Classificar e filtrar</li>
+              <li>Gráficos</li>
+              <li>Tabelas dinâmicas</li>
+            </ul>
+          </div>
+        </li>
+        <li class="pg-module">
+          <button type="button" class="pg-module_btn" aria-expanded="false">
+            <span class="pg-module_num">4</span>
+            <span class="pg-module_title">Automação e produtividade<small>3 aulas · 4h</small></span>
+            <span class="pg-module_arrow" aria-hidden="true">⌄</span>
+          </button>
+          <div class="pg-module_ctt">
+            <ul>
+              <li>Formatação condicional</li>
+              <li>Validação de dados</li>
+              <li>Introdução a macros</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="pg-section">
+    <div class="pg-ctn">
+      <div class="pg-cert">
+        <span class="pg-cert_icon"><img src="../assets/svg/icons/doc.svg" alt=""></span>
+        <div>
+          <h3>Conquiste o seu certificado</h3>
+          <p>Conclua 100% das atividades e tire nota mínima de 70% na avaliação final. O certificado é gratuito e você mesmo imprime.</p>
+        </div>
+        <a href="atividade.html" class="pg-btn">Começar agora</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script type="application/json" id="bia-context">
+{
+  "curso": "Excel na Prática",
+  "cargaHoraria": "16h",
+  "nivel": "Iniciante",
+  "objetivo": "Capacitar você a criar planilhas eficientes, usar fórmulas essenciais (SOMA, MÉDIA, SE e PROCV), analisar dados com gráficos e tabelas dinâmicas e automatizar tarefas do dia a dia.",
+  "progresso": 30,
+  "faltante": "Concluir 70% das aulas restantes e atingir nota mínima de 70% na avaliação final para liberar o certificado gratuito.",
+  "modulos": [
+    { "titulo": "Primeiros passos no Excel", "desc": "interface, células e formatação" },
+    { "titulo": "Fórmulas e funções", "desc": "SOMA, MÉDIA, SE, PROCV e PROCX" },
+    { "titulo": "Análise de dados", "desc": "filtros, gráficos e tabelas dinâmicas" },
+    { "titulo": "Automação e produtividade", "desc": "formatação condicional, validação e macros" }
+  ],
+  "certificado": "Para receber o certificado:\n\n1. Conclua **100% das atividades** do curso\n2. Faça a **avaliação final** e tire **70% ou mais**\n3. Clique em **Mais opções > Fechar matrícula**\n4. Acesse **Área do Aluno > Histórico de Cursos** e clique em **Imprimir Certificado**\n\nO certificado é **gratuito**! 🎓",
+  "matricula": "É bem simples:\n\n1. Clique em **Matricule-se** nesta página\n2. Se ainda não tiver conta, faça seu **cadastro** (é rápido!)\n3. Pronto, o curso aparece na sua **Área do Aluno** e você já pode começar.",
+  "faq": [
+    { "keys": ["procv", "procx"], "answer": "O **PROCV** é estudado no **Módulo 2 – Fórmulas e funções**. Ele busca um valor em uma tabela e traz uma informação da mesma linha, por exemplo: `=PROCV(A2;Tabela;2;FALSO)`." },
+    { "keys": ["grafico", "gráfico", "dinamica", "dinâmica"], "answer": "Gráficos e tabelas dinâmicas fazem parte do **Módulo 3 – Análise de dados**." },
+    { "keys": ["macro", "automat"], "answer": "A automação com macros é vista no **Módulo 4 – Automação e produtividade**." },
+    { "keys": ["celular", "mobile", "computador", "excel instalado", "programa"], "answer": "Você assiste às aulas pelo celular ou computador, mas para praticar recomendamos ter o **Excel** (ou o Excel on-line gratuito) em um computador." }
+  ]
+}
+</script>
+  
+<style>
+    .o-footer_link.-icon.-cell.-disabled-performa {
+      display: none;
+    }
+
+    .o-footer_link.-icon.-cell.-disabled-performa:hover {
+      display: none;
+    }
+</style>
+
+
+
+<footer class="o-footer">
+  <div class="v-ctn">
+    <div class="o-footer_head">
+      <div class="o-footer_logo">
+        <a href="/" class="o-footer_logo-link">
+          <img src="../assets/svg/escola_virtual_horizontal_full.svg" alt="fundação bradesco | escola virtual" class="o-footer_img">
+        </a>
+      </div>
+      <div class="o-footer_socials">
+        <p class="o-footer_desc">
+          Fundação Bradesco <br /><span>Nossas redes</span>
+        </p>
+        <ul class="m-socials o-footer_socials-list">
+          <li class="m-socials_item">
+            <a href="https://www.youtube.com/channel/UCPm_7G9UZwJXJQuQNKh6NIg/" target="_blank" class="m-socials_link -youtube" data-tracking='{ "id": "footnote-social" }'>Youtube</a>
+          </li>
+          <li class="m-socials_item">
+            <a href="https://www.instagram.com/fundacao.bradesco" target="_blank" class="m-socials_link -instagram" data-tracking='{ "id": "footnote-social" }'>Instagram</a>
+          </li>
+          <li class="m-socials_item">
+            <a href="https://www.facebook.com/Funda%C3%A7%C3%A3o-Bradesco-309300189970322" target="_blank" class="m-socials_link -faceboook" data-tracking='{ "id": "footnote-social" }'>Facebook</a>
+          </li>
+          <li class="m-socials_item">
+            <a href="https://www.linkedin.com/school/fundacaobradesco/" target="_blank" class="m-socials_link -linkedin" data-tracking='{ "id": "footnote-social" }'>LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="o-footer_body" data-component="accordion">
+      <div class="o-footer_info">
+        <div class="o-footer_help">
+          <div>
+            <p class="a-label -bottom">Precisa de ajuda?</p>
+            <address class="o-footer_contact">
+              <ul class="o-footer_list -bigger">
+                <li class="o-footer_item">
+                  <a href="/faq" class="o-footer_link a-border-icon -perfre m-border-list_link">Perguntas frequentes</a>
+                </li>
+                <li class="o-footer_item">
+                  <a href="/validar-certificado" class="o-footer_link -icon -doc-2" data-tracking='{ "id": "footnote" }'>
+                    Validação de Certificado <br>
+                    
+                  </a>
+                </li>
+                
+              </ul>
+            </address>
+          </div>
+        </div>
+        <button class="o-footer_link -arrow" data-accordion-button>Acesso rápido</button>
+      </div>
+      <div class="o-footer_sitemap_hld" data-accordion-list>
+        <div class="o-footer_sitemap">
+          <div class="o-footer_area">
+            <p class="a-label">Privacidade</p>
+            <ul class="o-footer_list padding-bottom-personalizado">
+              <li class="o-footer_item">
+                <a href="https://fundacao.bradesco/diretiva-de-privacidade" target="_blank" class="o-footer_link -icon -lock" data-tracking='{ "id": "footnote" }'>Diretiva de Privacidade</a>
+              </li>
+              <li class="o-footer_item">
+                <a target="_blank" class="o-footer_link link_termos_uso" data-tracking='{ "id": "footnote" }' href="#UseTerms">Termos e Condições de Uso da Escola Virtual</a>
+              </li>
+            </ul>
+            <p class="a-label">Escola Virtual</p>
+            <ul class="o-footer_list padding-bottom-personalizado">
+              <li class="o-footer_item">
+                <a href="/escola-virtual" class="o-footer_link" data-tracking='{ "id": "footnote", "lbl": "escola virtual sobre" }'>Sobre</a>
+              </li>
+              
+            </ul>
+          </div>
+          <div class="m-accordion_item itens-acordeon" data-component="accordion">
+            <p data-accordion-button class="a-label -spaced m-accordion_prev acordeon_prev"><span class="ajuste-cor-accordion"> <i>Sites</i> da Organização</span></p>
+            
+            <ul class="o-footer_list m-accordion_ctt config_margem_acordeon padding-bottom-personalizado" aria-hidden="true" data-accordion-list>
+
+              <li class="o-footer_item">
+                <a href="https://banco.bradesco/" target="_blank" class="o-footer_link" data-tracking='{ "id": "footnote-reference" }'>Bradesco</a>
+              </li>
+              <li class="o-footer_item">
+                <a href="https://fundacao.bradesco/" target="_blank" class="o-footer_link" data-tracking='{ "id": "footnote-reference" }'>Institucional</a>
+              </li>
+              <li class="o-footer_item">
+                <a href="http://www.fundacaobradesco.org.br/museu/museu.asp" target="_blank" class="o-footer_link" data-tracking='{ "id": "footnote-reference" }'>Museu Histórico Bradesco</a>
+              </li>
+              <li class="o-footer_item">
+                <a href="https://www.educacao.org.br/" target="_blank" class="o-footer_link" data-tracking='{ "id": "footnote-reference" }'>Portal de Educação</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="o-footer_foot">
+    <small class="o-footer_disclaimer">Fundação Bradesco - Escola Virtual <span>Todos os direitos reservados</span></small>
+  </div>
+</footer>
+<div data-bia="curso"></div>
+  <script src="../js/script.js"></script>
+  <script src="../js/paginas.js"></script>
+  <script src="../js/bia.js"></script>
+</body>
+</html>
