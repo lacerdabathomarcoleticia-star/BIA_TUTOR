@@ -38,3 +38,11 @@ O tutor abre explicando a habilidade antes de qualquer pergunta, resolve a dúvi
 
 Declaramos que, durante o desenvolvimento do projeto, utilizamos ferramentas de Inteligência Artificial como apoio na reprodução demonstrativa da interface do site oficial da Escola Virtual da Fundação Bradesco.
 A clonagem da interface foi realizada exclusivamente para fins acadêmicos e de demonstração, com o objetivo de criar um ambiente visual de referência para apresentar e testar a nossa implementação.
+Estrutura do projeto
+
+- index.html — página inicial da Escola Virtual
+- pages/curso.html — página do curso
+- pages/atividade.html — página de atividade com o BIA Tutor
+- css/ — estilos globais (style.css), das páginas internas (paginas.css) e do tutor (bia.css)
+- js/ — scripts da index (script.js), das páginas internas (paginas.js) e do tutor (bia.js)
+- assets/ — fontes, imagens e ícones SVG
