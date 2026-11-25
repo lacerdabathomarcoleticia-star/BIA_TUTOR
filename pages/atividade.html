@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Função SE - Excel na Prática | Fundação Bradesco - Escola Virtual</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/svg/icons/bradesco-logo-white.svg" />
+  <meta name="description" content="Aula Função SE do curso Excel na Prática - Escola Virtual Fundação Bradesco" />
+  <meta name="theme-color" content="#2b2d43" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/paginas.css" />
+  <link rel="stylesheet" href="../css/bia.css" />
+</head>
+<body class="pg pg-lms">
+
+<header class="pg-topbar">
+  <a href="../index.html" class="pg-topbar_logo"><img src="../assets/svg/escola_virtual_horizontal_full.svg" alt="Fundação Bradesco | Escola Virtual"></a>
+  <div class="pg-topbar_course">
+    <small>Curso</small>
+    <strong>Excel na Prática</strong>
+  </div>
+  <div class="pg-progress" role="region" aria-label="Progresso do curso">
+    <span class="pg-progress_title">Progresso</span>
+    <span class="pg-progress_bar">
+      <span data-progress style="width:30%"></span>
+    </span>
+    <strong class="pg-progress_pct" data-progress-label>30%</strong>
+  </div>
+  <a href="curso.html" class="pg-topbar_exit">Sair da aula</a>
+</header>
+
+<div class="pg-lms_wrap">
+  <aside class="pg-side" aria-label="Conteúdo do curso">
+    <h2>Conteúdo do curso</h2>
+    <div class="pg-side_mod">
+      <p>1. Primeiros passos no Excel</p>
+      <ul class="pg-side_list">
+        <li><a href="#" class="-done">Conhecendo a interface</a></li>
+        <li><a href="#" class="-done">Células, linhas e colunas</a></li>
+        <li><a href="#" class="-done">Formatação de planilhas</a></li>
+      </ul>
+    </div>
+    <div class="pg-side_mod">
+      <p>2. Fórmulas e funções</p>
+      <ul class="pg-side_list">
+        <li><a href="#" class="-done">Operações básicas e referências</a></li>
+        <li><a href="#" class="-done">SOMA, MÉDIA, MÁXIMO e MÍNIMO</a></li>
+        <li><a href="#" class="-current" aria-current="page">Função SE: tomando decisões</a></li>
+        <li><a href="#">PROCV e PROCX</a></li>
+      </ul>
+    </div>
+    <div class="pg-side_mod">
+      <p>3. Análise de dados</p>
+      <ul class="pg-side_list">
+        <li><a href="#">Classificar e filtrar</a></li>
+        <li><a href="#">Gráficos</a></li>
+        <li><a href="#">Tabelas dinâmicas</a></li>
+      </ul>
+    </div>
+    <div class="pg-side_mod">
+      <p>4. Automação e produtividade</p>
+      <ul class="pg-side_list">
+        <li><a href="#">Formatação condicional</a></li>
+        <li><a href="#">Validação de dados</a></li>
+        <li><a href="#">Introdução a macros</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="pg-lesson" id="conteudo-principal">
+    <p class="pg-lesson_kicker">Módulo 2 · Aula 3</p>
+    <h1 class="pg-lesson_title">Função SE: tomando decisões nas planilhas</h1>
+
+    <div class="pg-video">
+      <span class="pg-video_formula">=SE(B2&gt;=7;"Aprovado";"Reprovado")</span>
+      <button type="button" class="pg-video_play" aria-label="Reproduzir videoaula"><img src="../assets/svg/icons/play.svg" alt=""></button>
+      <span class="pg-video_info">Videoaula · 12 min</span>
+    </div>
+
+    <section class="pg-card">
+      <h2>O que é a função SE?</h2>
+      <p>A função <code>SE</code> faz um <strong>teste lógico</strong> e devolve um resultado quando o teste é <strong>verdadeiro</strong> e outro quando é <strong>falso</strong>. Ela é a forma de a planilha “tomar decisões” sozinha.</p>
+      <p>A estrutura é: <code>=SE(teste_lógico; valor_se_verdadeiro; valor_se_falso)</code></p>
+      <div class="pg-sheet-wrap">
+        <table class="pg-sheet">
+          <thead>
+            <tr><th class="-col"></th><th>A</th><th>B</th><th>C</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="-col">1</td><th>Aluno</th><th>Nota</th><th>Situação</th></tr>
+            <tr><td class="-col">2</td><td>Ana</td><td>8,5</td><td class="-hl">Aprovado</td></tr>
+            <tr><td class="-col">3</td><td>Bruno</td><td>6,0</td><td class="-hl">Reprovado</td></tr>
+            <tr><td class="-col">4</td><td>Carla</td><td>7,0</td><td class="-hl">Aprovado</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Na célula <code>C2</code> foi usada a fórmula <code>=SE(B2&gt;=7;"Aprovado";"Reprovado")</code> e depois ela foi arrastada para baixo.</p>
+    </section>
+
+    <section class="pg-card" data-quiz aria-label="Atividade de 15 questões">
+      <div class="pg-quiz_head">
+        <div>
+          <h2>Atividade Avaliativa</h2>
+          <p class="pg-quiz_sub">Responda às 15 questões para avançar para a próxima aula.</p>
+        </div>
+        <div class="pg-quiz_meta">
+          <span class="pg-quiz_counter" data-quiz-counter>Questão 1 de 15</span>
+          <span class="pg-quiz_topic" data-quiz-topic>Assunto: Sintaxe da Função SE</span>
+        </div>
+      </div>
+      <div class="pg-quiz_progress" aria-hidden="true">
+        <span data-quiz-progress-bar style="width: 6.67%"></span>
+      </div>
+
+      <div data-quiz-body>
+        <p class="pg-quiz_q" data-quiz-question>Carregando questão...</p>
+        <ul class="pg-quiz_opts" data-quiz-options></ul>
+        <div class="pg-quiz_feedback" data-quiz-feedback hidden aria-live="polite"></div>
+      </div>
+
+      <div class="pg-quiz_actions">
+        <button type="button" class="pg-btn -outline -small" data-quiz-prev disabled>‹ Anterior</button>
+        <span class="pg-quiz_score" data-quiz-score aria-live="polite"></span>
+        <button type="button" class="pg-btn -small" data-quiz-next disabled>Próxima questão ›</button>
+      </div>
+    </section>
+
+    <nav class="pg-lesson_nav" aria-label="Navegação entre aulas">
+      <a href="#" class="pg-btn -outline -small">‹ Aula anterior</a>
+      <a href="#" class="pg-btn -small -disabled" data-next aria-disabled="true">Próxima aula ›</a>
+    </nav>
+  </main>
+</div>
+
+<div data-bia="tutor"></div>
+
+<script type="application/json" id="bia-context">
+{
+  "curso": "Excel na Prática",
+  "aula": "Função SE: tomando decisões nas planilhas",
+  "resumo": [
+    "A função `SE` faz um **teste lógico** e devolve um valor se ele for **verdadeiro** e outro se for **falso**.",
+    "Estrutura: `=SE(teste_lógico; valor_se_verdadeiro; valor_se_falso)`.",
+    "O teste usa operadores de comparação: `>`, `<`, `>=`, `<=`, `=` e `<>` (diferente).",
+    "Textos dentro da fórmula ficam **entre aspas**, como `\"Aprovado\"`.",
+    "Depois de escrever a fórmula em uma célula, você pode **arrastar** para aplicar nas outras linhas."
+  ],
+  "analogias": [
+    "🚦 **Pense em um semáforo.** O motorista faz uma pergunta: *o sinal está verde?* Se **sim**, ele segue; se **não**, ele para. A função SE é exatamente isso: `=SE(sinal=\"verde\"; \"Siga\"; \"Pare\")`.",
+    "🚪 **Ou no porteiro de uma festa:** se a pessoa tem 18 anos ou mais, ela entra; senão, fica de fora. O porteiro é o **teste lógico**, e “entra” ou “fica de fora” são os dois resultados possíveis.",
+    "Ou seja: a função SE sempre tem **uma pergunta** e **dois caminhos**."
+  ],
+  "exemplos": [
+    "**Meta de vendas:** `=SE(B2>=5000;\"Bateu a meta\";\"Abaixo da meta\")`",
+    "**Estoque:** `=SE(C2<10;\"Repor\";\"OK\")` avisa quando um produto está acabando.",
+    "**Desconto:** `=SE(A2>=200;A2*0,9;A2)` aplica 10% de desconto em compras a partir de R$ 200.",
+    "**Conta atrasada:** `=SE(HOJE()>D2;\"Vencida\";\"Em dia\")` compara a data de hoje com o vencimento."
+  ],
+  "desafio": "Vamos treinar! 💪\n\nNa célula **B2** está a idade de uma pessoa. Escreva uma fórmula que mostre **\"Pode votar\"** quando a idade for **16 ou mais** e **\"Não pode votar\"** caso contrário.\n\nDica: comece com `=SE(B2>=16; ...`",
+  "faq": [
+    { "keys": ["aspas"], "answer": "Use **aspas** sempre que o resultado for um **texto**, como `\"Aprovado\"`. Números e referências de células (como `B2`) ficam **sem aspas**." },
+    { "keys": ["ponto e virgula", "ponto-e-virgula", "separador", "virgula"], "answer": "No Excel em português, os argumentos são separados por **ponto e vírgula** (`;`). Em versões em inglês, o separador é a **vírgula** (`,`)." },
+    { "keys": ["mais de duas", "tres", "três", "aninhad", "varias condicoes", "várias condições", "e(", "ou("], "answer": "Dá para combinar condições! Exemplos:\n\n- **SE aninhado:** `=SE(B2>=9;\"Ótimo\";SE(B2>=7;\"Bom\";\"Estudar mais\"))`\n- **Com E:** `=SE(E(B2>=7;C2>=75%);\"Aprovado\";\"Reprovado\")`\n\nIsso será aprofundado nas próximas aulas." },
+    { "keys": ["#nome", "erro", "nao funciona", "não funciona"], "answer": "Alguns erros comuns na função SE:\n\n- **#NOME?** → faltaram as aspas em um texto ou o nome da função está escrito errado\n- Usar `,` em vez de `;` no Excel em português\n- Esquecer de fechar o parêntese no final" },
+    { "keys": ["16", "votar"], "answer": "Isso! Uma resposta possível é:\n\n`=SE(B2>=16;\"Pode votar\";\"Não pode votar\")`\n\nO teste `B2>=16` verifica se a idade é 16 ou mais. 🎉" },
+    { "keys": ["procv"], "answer": "O **PROCV** é o tema da **próxima aula**! Termine esta atividade para continuar. 😉" }
+  ]
+}
+</script>
+
+<script src="../js/paginas.js"></script>
+<script src="../js/bia.js"></script>
+</body>
+</html>
